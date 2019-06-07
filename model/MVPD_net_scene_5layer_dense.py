@@ -1,4 +1,4 @@
-# Make a feedforward neural network for MVPD - cope4(scene) prediction
+# 5-layer dense MVPN - cope4(scene) prediction
 import sys, os, time
 import nibabel as nib
 import numpy as np
