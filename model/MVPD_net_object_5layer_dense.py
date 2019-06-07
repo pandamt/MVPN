@@ -1,4 +1,4 @@
-# Make a feedforward neural network for MVPD - cope3(object) prediction
+# 5-layer dense MVPN - cope3(object) prediction
 import sys, os, time
 import numpy as np
 import itertools as it
@@ -26,7 +26,7 @@ if not os.path.exists(save_dir):
        os.mkdir(save_dir)
 
 # Hyper-parameters of NN 
-input_size = 160 # PPA, TOS, RSP each 80 voxels
+input_size = 160 # mFus, MTG each 80 voxels
 hidden_size = 100
 output_size = 53539 # number of non-zero voxels in the brainmask 
 
