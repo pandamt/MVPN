@@ -1,4 +1,4 @@
-# Make a feedforward neural network with five hidden layers for MVPD - cope1(face) prediction
+# 5-layer dense MVPN - cope1(face) prediction
 import sys, os, time
 import nibabel as nib
 import numpy as np
