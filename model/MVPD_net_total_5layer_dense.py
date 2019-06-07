@@ -1,4 +1,4 @@
-# Make a feedforward neural network for MVPD - total prediction
+# 5-layer dense MVPN - total (all copes) prediction
 import sys, os, time
 import nibabel as nib
 import numpy as np
@@ -15,7 +15,7 @@ from model_settings import all_subjects, total_run, sub, num_epochs, save_freq, 
 
 sys.argv = [sys.argv[0], sys.argv[1]]
 this_run = int(sys.argv[1])
-print("this_run:", this_run)
+print("this_run:", this_run)Make
 
 # Device configuration
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -27,7 +27,7 @@ if not os.path.exists(save_dir):
        os.mkdir(save_dir)
 
 # Hyper-parameters of NN 
-input_size = 880 # FFA,STS,OFA each 80 voxels
+input_size = 880 # cope1-cope4 all 11 ROIs each 80 voxels
 hidden_size = 100
 output_size = 53539 # number of non-zero voxels in the brainmask 
 
