@@ -26,7 +26,7 @@ if not os.path.exists(save_dir):
        os.mkdir(save_dir)
 
 # Hyper-parameters of NN 
-input_size = 160 # mFus, MTG each 80 voxels
+input_size = 240 # PPA, TOS, RSC each 80 voxels
 hidden_size = 100
 output_size = 53539 # number of non-zero voxels in the brainmask 
 
